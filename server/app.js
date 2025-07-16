@@ -13,7 +13,7 @@ const cors = require('cors')
 
 
 // Database Connection
-
+const connectDB = require('./src/utility/Database/ConnectDB')
 
 // Create express app
 const app = express();
@@ -46,7 +46,7 @@ app.use(limiter);
 
 
 // 5. Connect to DB
-
+connectDB()
 
 
 // 6. Routes
