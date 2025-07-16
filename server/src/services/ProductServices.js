@@ -5,7 +5,7 @@ const ProductDetailsModel = require('./../models/productDetailsModel')
 const ReviewModel = require('./../models/ProductReviewModel')
 const ProductModel = require('./../models/ProductModel')
 const mongoose = require('mongoose')
-const ObjectID = mongoose.Types.ObjectId
+const ObjectId = mongoose.Types.ObjectId
 
 const BrandService = async () => {
     try {
@@ -36,18 +36,20 @@ const SliderService = async () => {
 }
 
 
-const ListByBrandService = async (id) => {
-    const brandID = new ObjectID(req.params.id)
-    const MatchStage = { $match: { brandId: brandID } }
-    const joinWithBrand = { $lookup: { from: 'brands', localField: 'brandID', foreignField: '_id', ass: 'brands' } }
-    const JoinWithCategory = { $lookup: { from: 'categories', localField: 'categoryID', foreignField: '_id', ass: 'category' } }
-
+const ListByBrandService = async (req) => {
+    const brandId = new ObjectId(req.params.brandID)
+    let MatchStage = {$match: { brandID: brandId } }
+    let joinWithBrand = { $lookup: { from: "brands", localField: "brandID", foreignField: "_id", as: "brands" } }
+    const JoinWithCategory = { $lookup: { from: 'categories', localField: 'categoryID', foreignField: '_id', as: 'category' } }
+    console.log(JoinWithCategory);
     try {
         const data = await ProductModel.aggregate([
             MatchStage,
             joinWithBrand,
             JoinWithCategory
         ])
+
+        console.log(data);
 
         return { status: "success", data }
     } catch (error) {

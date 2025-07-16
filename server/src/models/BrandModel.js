@@ -4,7 +4,7 @@ const DataSchema = mongoose.Schema({
     brandName: { type: String, unique: true },
     brandImg: { type: String, unique: true }
 }, {
-    Timestamp: true, versionKey: false
+    timestamp: true, versionKey: false
 })
 
 

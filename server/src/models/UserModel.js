@@ -4,7 +4,7 @@ const DataSchema = mongoose.Schema({
     email: { type: String, required: true, unique: true, lowercase: true },
     otp: { type: String, required: true },
 }, {
-    Timestamp: true, versionKey: false
+    timestamp: true, versionKey: false
 })
 
 

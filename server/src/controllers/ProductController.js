@@ -49,6 +49,17 @@ exports.ProductSliderList = async (req, res) => {
 
 
 exports.ProductListByBrand = async (req, res) => {
+    try {
+        const result = await ListByBrandService(req)
+
+        if (result.status === "fail") {
+            return res.status(500).json(result)
+        }
+
+        res.status(200).json(result)
+    } catch (error) {
+        return res.status(500).send({ message: error.message })
+    }
 
 }
 

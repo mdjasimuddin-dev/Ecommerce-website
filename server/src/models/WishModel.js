@@ -4,7 +4,7 @@ const DataSchema = mongoose.Schema({
     productID: { type: mongoose.Schema.Types.ObjectId, required: true},
     userID: { type: mongoose.Schema.Types.ObjectId, required: true},
 }, {
-    Timestamp: true, versionKey: false
+    timestamp: true, versionKey: false
 })
 
 

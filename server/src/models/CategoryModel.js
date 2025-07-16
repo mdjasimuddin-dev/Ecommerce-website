@@ -4,7 +4,7 @@ const DataSchema = mongoose.Schema({
     categoryName: { type: String, unique: true },
     categoryImg: { type: String, required: true }
 }, {
-    Timestamp: true, versionKey: false
+    timestamp: true, versionKey: false
 })
 
 

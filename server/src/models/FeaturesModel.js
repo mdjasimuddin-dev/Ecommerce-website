@@ -5,7 +5,7 @@ const DataSchema = mongoose.Schema({
     description: { type: String, required: true },
     img: { type: String, required: true },
 }, {
-    Timestamp: true, versionKey: false
+    timestamp: true, versionKey: false
 })
 const FeatureModel = mongoose.model('paymentSettings', DataSchema)
 module.exports = FeatureModel

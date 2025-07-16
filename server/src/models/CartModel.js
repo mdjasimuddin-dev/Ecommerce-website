@@ -8,7 +8,7 @@ const DataSchema = mongoose.Schema({
     qty : {type : String},
     size : {type : String},
 }, {
-    Timestamp: true, versionKey: false
+    timestamp: true, versionKey: false
 })
 
 const CartModel = mongoose.model('carts', DataSchema)
