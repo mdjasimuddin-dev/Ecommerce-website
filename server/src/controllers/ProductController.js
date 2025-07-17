@@ -21,8 +21,6 @@ exports.ProductBrandList = async (req, res) => {
     }
 }
 
-
-
 exports.ProductCategoryList = async (req, res) => {
     try {
         const result = await CategoryService()
@@ -32,9 +30,6 @@ exports.ProductCategoryList = async (req, res) => {
     }
 }
 
-
-
-
 exports.ProductSliderList = async (req, res) => {
     try {
         const result = await SliderService()
@@ -43,6 +38,8 @@ exports.ProductSliderList = async (req, res) => {
         res.status(500).json({ status: "fail", message: error.message });
     }
 }
+
+
 
 
 
@@ -63,7 +60,6 @@ exports.ProductListByBrand = async (req, res) => {
 
 }
 
-
 exports.ProductListByCategory = async (req, res) => {
     try {
         const result = await ListByCategoryService(req)
@@ -78,7 +74,25 @@ exports.ProductListByCategory = async (req, res) => {
     }
 }
 
+exports.ProductListByRemark = async (req, res) => {
+    try {
+        const result = await ListByRemarkService(req)
+        if (result.status === 'fail') {
+            return res.status(500).json(result)
+        }
+        res.status(200).json(result)
+    } catch (error) {
+        return res.status(500).json(result)
+    }
+}
+
+
+
+
+
+
 exports.ProductListBySmiler = async (req, res) => {
+
 
 }
 
@@ -86,9 +100,7 @@ exports.ProductListByKeyword = async (req, res) => {
 
 }
 
-exports.ProductListByRemark = async (req, res) => {
 
-}
 
 exports.ProductDetails = async (req, res) => {
 
