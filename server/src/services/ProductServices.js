@@ -38,7 +38,7 @@ const SliderService = async () => {
 
 const ListByBrandService = async (req) => {
     const brandId = new ObjectId(req.params.brandID)
-    let MatchStage = {$match: { brandID: brandId } }
+    let MatchStage = { $match: { brandID: brandId } }
     let joinWithBrand = { $lookup: { from: "brands", localField: "brandID", foreignField: "_id", as: "brands" } }
     const JoinWithCategory = { $lookup: { from: 'categories', localField: 'categoryID', foreignField: '_id', as: 'category' } }
     console.log(JoinWithCategory);
@@ -57,8 +57,26 @@ const ListByBrandService = async (req) => {
     }
 }
 
-const ListByCategoryService = async () => {
+const ListByCategoryService = async (req) => {
 
+    let categoryID = new ObjectId(req.params.CategoryID)
+    let MatchStage = { $match: { categoryID: categoryID } }
+    let JoinWithBrand = { $lookup: { from: "brands", localField: 'brandID', foreignField: "_id", as: "brands" } }
+    let JoinWithCategory = { $lookup: { from: "categories", localField: 'categoryID', foreignField: "_id", as: "categories" } }
+    try {
+        const data = await ProductModel.aggregate([
+            MatchStage,
+            JoinWithBrand,
+            JoinWithCategory
+        ])
+
+        console.log(data);
+
+        return { status: "success", data }
+
+    } catch (error) {
+        return { status: "fail", message: error.message }
+    }
 }
 
 

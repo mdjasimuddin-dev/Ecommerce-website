@@ -65,7 +65,17 @@ exports.ProductListByBrand = async (req, res) => {
 
 
 exports.ProductListByCategory = async (req, res) => {
+    try {
+        const result = await ListByCategoryService(req)
 
+        if (result.status === "fail") {
+            return res.status(500).json(result)
+        }
+
+        res.status(200).json(result)
+    } catch (error) {
+        return res.status(500).send({ message: error.message })
+    }
 }
 
 exports.ProductListBySmiler = async (req, res) => {
