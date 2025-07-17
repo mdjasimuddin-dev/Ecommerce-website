@@ -126,8 +126,31 @@ const ListByRemarkService = async (req) => {
 
 
 
-const ListBySmilerService = async () => {
+const ListBySmilerService = async (req) => {
+    try {
+        let categoryID = new ObjectId(req.params.CategoryID)
+        let MatchStage = { $match: { categoryID: categoryID } }
+        let limit = { $limit: 20 }
+        let JoinWithBrandStage = { $lookup: { from: 'brands', localField: 'brandID', foreignField: '_id', as: 'brand' } }
+        let JoinWithCategoryStage = { $lookup: { from: 'categories', localField: 'categoryID', foreignField: '_id', as: 'category' } }
+        let unwindBrandStage = { $unwind: '$brand' }
+        let unwindCategoryStage = { $unwind: '$category' }
+        let projection = { $project: { 'brand._id': 0, 'category._id': 0 } }
 
+
+        const data = await ProductModel.aggregate([
+            MatchStage, limit,
+            JoinWithBrandStage,
+            JoinWithCategoryStage,
+            unwindBrandStage, unwindCategoryStage,
+            projection
+        ])
+
+        console.log(data);
+        return { status: 'success', data }
+    } catch (error) {
+        return { status: 'fail', message: error.message }
+    }
 }
 
 const ListByKeywordService = async () => {
@@ -140,8 +163,34 @@ const ListByKeywordService = async () => {
 
 
 
-const ProductDetailsService = async () => {
+const ProductDetailsService = async (req) => {
+    try {
+        const productId = new ObjectId(req.params.productID)
+        const MatchStage = { $match: { _id: productId } }
+        const BrandStage = { $lookup: { from: 'brands', localField: 'brandID', foreignField: '_id', as: 'brand' } }
+        const CategoryStage = { $lookup: { from: 'categories', localField: 'categoryID', foreignField: '_id', as: 'category' } }
+        const DetailsStage = { $lookup: { from: 'productsdetails', localField: '_id', foreignField: 'productID', as: 'product' } }
 
+        const unwindBrandStage = { $unwind: '$brand' }
+        const unwindCategoryStage = { $unwind: '$category' }
+        const unwindDetailsStage = { $unwind: '$product' }
+
+        const data = await ProductModel.aggregate([
+            MatchStage,
+            BrandStage,
+            CategoryStage,
+            DetailsStage,
+            unwindBrandStage,
+            unwindCategoryStage,
+            unwindDetailsStage
+        ])
+
+        console.log(data);
+        return { status: "success", data }
+
+    } catch (error) {
+        return { status: "fail", message: error.message }
+    }
 }
 
 

@@ -82,7 +82,7 @@ exports.ProductListByRemark = async (req, res) => {
         }
         res.status(200).json(result)
     } catch (error) {
-        return res.status(500).json(result)
+        return res.status(500).send({ message: error.message })
     }
 }
 
@@ -93,8 +93,19 @@ exports.ProductListByRemark = async (req, res) => {
 
 exports.ProductListBySmiler = async (req, res) => {
 
-
+    try {
+        const result = await ListBySmilerService(req)
+        if (result.status === 'fail') {
+            res.status(200).json(result)
+        }
+        res.status(200).json(result)
+    } catch (error) {
+        return res.status(500).send({ message: error.message })
+    }
 }
+
+
+
 
 exports.ProductListByKeyword = async (req, res) => {
 
@@ -103,7 +114,15 @@ exports.ProductListByKeyword = async (req, res) => {
 
 
 exports.ProductDetails = async (req, res) => {
-
+    try {
+        const result = await ProductDetailsService(req)
+        if (result === 'fail') {
+            res.status(500).json(result)
+        }
+        res.status(200).json(result)
+    } catch (error) {
+        return res.status(500).send({ message: error.message })
+    }
 }
 
 exports.ProductReviewList = async (req, res) => {
