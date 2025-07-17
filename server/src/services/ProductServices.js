@@ -153,16 +153,6 @@ const ListBySmilerService = async (req) => {
     }
 }
 
-const ListByKeywordService = async () => {
-
-}
-
-
-
-
-
-
-
 const ProductDetailsService = async (req) => {
     try {
         const productId = new ObjectId(req.params.productID)
@@ -193,6 +183,39 @@ const ProductDetailsService = async (req) => {
     }
 }
 
+const ListByKeywordService = async (req) => {
+    try {
+        const keyword = req.params.keyword
+        if (!keyword) {
+            return { status: "fail", message: "Keyword is required." };
+        }
+        const searchRegex = { "$regex": keyword, "$options": "i" }
+        const searchParams = [{ title: searchRegex }, { shortDes: searchRegex }]
+        const searchQuery = { $or: searchParams }
+
+
+        const MatchStage = { $match: searchQuery }
+
+        const BrandStage = { $lookup: { from: 'brands', localField: 'brandID', foreignField: '_id', as: 'brand' } }
+        const CategoryStage = { $lookup: { from: 'categories', localField: 'categoryID', foreignField: '_id', as: 'category' } }
+
+        const unwindBrandStage = { $unwind: '$brand' }
+        const unwindCategoryStage = { $unwind: '$category' }
+
+        const data = await ProductModel.aggregate([
+            MatchStage,
+            BrandStage,
+            CategoryStage,
+            unwindBrandStage,
+            unwindCategoryStage,
+        ])
+
+        console.log(data);
+        return { status: "success", data }
+    } catch (error) {
+        return { status: "fail", message: error.message }
+    }
+}
 
 
 const ReviewListService = async () => {

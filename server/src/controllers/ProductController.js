@@ -104,15 +104,6 @@ exports.ProductListBySmiler = async (req, res) => {
     }
 }
 
-
-
-
-exports.ProductListByKeyword = async (req, res) => {
-
-}
-
-
-
 exports.ProductDetails = async (req, res) => {
     try {
         const result = await ProductDetailsService(req)
@@ -124,6 +115,23 @@ exports.ProductDetails = async (req, res) => {
         return res.status(500).send({ message: error.message })
     }
 }
+
+exports.ProductListByKeyword = async (req, res) => {
+    try {
+        const result = await ListByKeywordService(req)
+        if (result.status === 'fail') {
+            res.status(500).json(result)
+        }
+        res.status(200).json(result)
+
+    } catch (error) {
+        return res.status(500).json({ message: error.message })
+    }
+}
+
+
+
+
 
 exports.ProductReviewList = async (req, res) => {
 
