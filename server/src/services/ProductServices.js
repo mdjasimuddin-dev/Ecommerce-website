@@ -1,8 +1,7 @@
 const BrandModel = require('./../models/BrandModel')
 const CategoryModel = require('./../models/CategoryModel')
 const ProductSliderModel = require('./../models/ProductSliderModel')
-const ProductDetailsModel = require('./../models/productDetailsModel')
-const ReviewModel = require('./../models/ProductReviewModel')
+const ReviewModel = require('./../models/ReviewModel')
 const ProductModel = require('./../models/ProductModel')
 const mongoose = require('mongoose')
 const ObjectId = mongoose.Types.ObjectId
@@ -218,8 +217,39 @@ const ListByKeywordService = async (req) => {
 }
 
 
-const ReviewListService = async () => {
+const ReviewListService = async (req) => {
+    try {
+        const productId = new ObjectId(req.params.productID)
 
+        const MatchStage = { $match: { productID: productId } }
+        const UserStage = { $lookup: { from: 'users', localField: 'userID', foreignField: '_id', as: 'userInfo' } };
+        const ProfileStage = { $lookup: { from: 'profiles', localField: 'userID', foreignField: 'userID', as: 'userProfile' } };
+        const ProductStage = { $lookup: { from: 'products', localField: 'productID', foreignField: '_id', as: 'product' } };
+
+        const unwindUserStage = { $unwind: "$userInfo" }
+        const unwindProfileStage = { $unwind: "$userProfile" }
+        const unwindProductStage = { $unwind: "$product" }
+
+        const projection = { $project: { 'desc': 1, 'rating': 1, 'userProfile.cus_name': 1, 'product.title': 1 } }
+
+
+        const data = await ReviewModel.aggregate([
+            MatchStage,
+            UserStage,
+            ProfileStage,
+            ProductStage,
+            unwindUserStage,
+            unwindProfileStage,
+            unwindProductStage,
+            projection
+        ])
+
+        console.log(data);
+        return { status: 'success', data }
+
+    } catch (error) {
+        return { status: 'fail', message: error.message }
+    }
 }
 
 

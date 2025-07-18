@@ -132,9 +132,16 @@ exports.ProductListByKeyword = async (req, res) => {
 
 
 
-
 exports.ProductReviewList = async (req, res) => {
-
+    try {
+        const result = await ReviewListService(req)
+        if (result.status === 'fail') {
+            return res.status(500).json(result)
+        }
+        res.status(200).json(result)
+    } catch (error) {
+        return res.status(500).json({ message: error.message })
+    }
 }
 
 
