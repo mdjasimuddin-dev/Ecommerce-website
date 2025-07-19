@@ -20,7 +20,8 @@ router.get('/productReviews/:productID', productController.ProductReviewList)
 
 
 router.get('/userOpt/:email', userController.userOtp)
-router.get('/otpVerify', userController.userOtpVerify)
+
+router.get('/otpVerify/:email/:otp', userController.userOtpVerify)
 router.get('/logout', userController.userLogout)
 router.get('/createProfile', userController.createProfile)
 router.get('/updateProfile', userController.updateProfile)

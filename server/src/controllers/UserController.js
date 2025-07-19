@@ -1,4 +1,4 @@
-const { userOtpService } = require("../services/UserServices")
+const { userOtpService, userOtpVerifyService } = require("../services/UserServices")
 
 exports.userOtp = async (req, res) => {
     const result = await userOtpService(req)
@@ -9,8 +9,12 @@ exports.userOtp = async (req, res) => {
 }
 
 
-exports.userOtpVerify = (req, res) => {
-
+exports.userOtpVerify = async (req, res) => {
+    const result = await userOtpVerifyService(req)
+    if (result.status === 'fail') {
+        return res.status(500).json(result)
+    }
+    return res.status(200).json(result)
 }
 
 
