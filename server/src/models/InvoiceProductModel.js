@@ -10,7 +10,7 @@ const DataSchema = mongoose.Schema({
     color: { type: String, required: true },
     size: { type: String, required: true }
 }, {
-    Timestamp: true, versionKey: false
+    Timestamps: true, versionKey: false
 })
 const InvoiceProductModel = mongoose.model('invoiceProducts', DataSchema)
 module.exports = InvoiceProductModel

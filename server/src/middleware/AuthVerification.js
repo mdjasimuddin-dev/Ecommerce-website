@@ -7,13 +7,14 @@ module.exports = (req, res, next) => {
     }
 
     let decoded = DecodedToken(token)
+    console.log("Token Data", decoded);
 
     if (decoded === null) {
         return res.status(401).json({ status: "fail", message: "Unauthorize access" })
     }
     const email = decoded.email
     const userID = decoded.userID
-    req.headers.useEmail = email
+    req.headers.userEmail = email
     req.headers.userID = userID
 
     next()

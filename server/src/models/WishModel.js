@@ -8,5 +8,5 @@ const DataSchema = mongoose.Schema({
 })
 
 
-const WishModel = mongoose.model('wishes', DataSchema)
+const WishModels = mongoose.model('wishes', DataSchema)
 module.exports = WishModel

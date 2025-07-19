@@ -13,7 +13,7 @@ const DataSchema = mongoose.Schema({
     categoryID: { type: mongoose.Schema.Types.ObjectId, required: true },
     brandID: { type: mongoose.Schema.Types.ObjectId, required: true },
 }, {
-    timestamp: true, versionKey: false
+    timestamps: true, versionKey: false
 })
 
 

@@ -6,7 +6,7 @@ const DataSchema = mongoose.Schema({
     desc : {type : String},
     rating : {type : String, required:true},
 }, {
-    timestamp: true, versionKey: false
+    timestamps: true, versionKey: false
 })
 const ReviewModel = mongoose.model('reviews', DataSchema)
 module.exports = ReviewModel

@@ -13,7 +13,7 @@ const DataSchema = mongoose.Schema({
     color: { type: String, required: true },
     size: { type: Boolean, required: true },
 }, {
-    Timestamp: true, versionKey: false
+    Timestamps: true, versionKey: false
 })
 
 

@@ -1,6 +1,7 @@
 const { EmailSend } = require("./../utility/EmailHelper")
 const UserModel = require('./../models/UserModel')
 const { EncodedToken } = require("../utility/TokenHelper")
+const ProfileModel = require("../models/ProfileModel")
 
 const userOtpService = async (req) => {
     try {
@@ -32,11 +33,6 @@ const userOtpVerifyService = async (req) => {
         console.log(email, otp);
 
         const total = await UserModel.countDocuments({ email: email, otp: otp })
-        console.log(total);
-
-        if (!total) {
-            return { status: 'fail', message: 'Invalid OTP or Email' };
-        }
 
         if (total === 1) {
             const user = await UserModel.findOne({ email: email, otp: otp })
@@ -44,11 +40,12 @@ const userOtpVerifyService = async (req) => {
 
 
             const token = EncodedToken(email, user._id)
-            console.log(token);
 
             // await UserModel.updateOne({ email: email }, { $set: { otp: '0' } })
 
             return { status: 'success', data: "Token Verify Done", token };
+        } else {
+            return { status: 'fail', data: "Unauthorize access" };
         }
 
 
@@ -58,31 +55,42 @@ const userOtpVerifyService = async (req) => {
 }
 
 
-const userLogoutService = () => {
+const saveProfileData = async (req) => {
+    try {
+        const userID = req.headers.userID
+        let reqBody = req.body
+        reqBody.userID = userID
+        if (!req.headers.userID) {
+            return { status: 'fail', message: "Unauthorize access" }
+        }
+
+        const data = await ProfileModel.updateOne({ userID: userID }, { $set: reqBody }, { upsert: true })
+        return { status: 'success', data }
+    } catch (error) {
+        return { status: 'success', message: error.message }
+    }
 
 }
 
 
-const userCreateService = () => {
 
-}
-
-
-const userUpdateService = () => {
-
-}
-
-
-const userReadService = () => {
-
+const readProfileService = async (req) => {
+    try {
+        const userID = req.headers.userID
+        if (!req.headers.userID) {
+            return { status: 'fail', message: "Unauthorize access" }
+        }
+        const data = await ProfileModel.find({ userID: userID })
+        return { status: 'success', data }
+    } catch (error) {
+        return { status: 'fail', message: error.message }
+    }
 }
 
 
 module.exports = {
     userOtpService,
     userOtpVerifyService,
-    userLogoutService,
-    userCreateService,
-    userUpdateService,
-    userReadService
+    saveProfileData,
+    readProfileService
 }

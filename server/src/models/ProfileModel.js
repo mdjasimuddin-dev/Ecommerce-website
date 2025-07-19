@@ -18,7 +18,7 @@ const DataSchema = mongoose.Schema({
     ship_postcode: { type: String},
     ship_state: { type: String},
 }, {
-    timestamp: true, versionKey: false
+    timestamps: true, versionKey: false
 })
 
 

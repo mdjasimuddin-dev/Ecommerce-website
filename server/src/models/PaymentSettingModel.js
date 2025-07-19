@@ -10,7 +10,7 @@ const DataSchema = mongoose.Schema({
     ipn_url: { type: String, required: true },
     init_url: { type: String, required: true },
 }, {
-    Timestamp: true, versionKey: false
+    Timestamps: true, versionKey: false
 })
 const PaymentSettingsModel = mongoose.model('paymentSettings', DataSchema)
 module.exports = PaymentSettingsModel
