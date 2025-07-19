@@ -9,10 +9,18 @@ exports.userOtp = async (req, res) => {
 }
 
 
-exports.userOtpVerify = async (req, res) => {
+exports.userOtpVerifyLogin = async (req, res) => {
     const result = await userOtpVerifyService(req)
     if (result.status === 'fail') {
         return res.status(500).json(result)
+    }
+
+    if (result.status === 'success') {
+        const cookieOptions = {
+            httpOnly: false,
+            expires: new Date(Date.now() + 24 * 60 * 60 * 1000)
+        }
+        res.cookie('token', result.token, cookieOptions)
     }
     return res.status(200).json(result)
 }
