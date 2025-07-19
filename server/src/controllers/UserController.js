@@ -27,7 +27,12 @@ exports.userOtpVerifyLogin = async (req, res) => {
 
 
 exports.userLogout = (req, res) => {
-
+    const cookieOptions = {
+        httpOnly: false,
+        expires: new Date(Date.now() - 24 * 60 * 60 * 1000)
+    }
+    res.cookie('token', '', cookieOptions)
+    return res.status(200).json(result)
 }
 
 

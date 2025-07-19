@@ -4,6 +4,7 @@ const router = express.Router()
 
 const productController = require('./../controllers/ProductController')
 const userController = require('./../controllers/UserController')
+const AuthVerification = require('./../middleware/AuthVerification')
 
 
 router.get('/productBrands', productController.ProductBrandList)
@@ -22,7 +23,7 @@ router.get('/productReviews/:productID', productController.ProductReviewList)
 router.get('/userOpt/:email', userController.userOtp)
 
 router.get('/otpVerify/:email/:otp', userController.userOtpVerifyLogin)
-router.get('/logout', userController.userLogout)
+router.get('/logout',AuthVerification, userController.userLogout)
 router.get('/createProfile', userController.createProfile)
 router.get('/updateProfile', userController.updateProfile)
 router.get('/readProfile', userController.readProfile)
