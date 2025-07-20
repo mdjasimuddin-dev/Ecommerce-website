@@ -4,9 +4,9 @@ const DataSchema = mongoose.Schema({
     productID: { type: mongoose.Schema.Types.ObjectId, required: true},
     userID: { type: mongoose.Schema.Types.ObjectId, required: true},
 }, {
-    timestamp: true, versionKey: false
+    timestamps: true, versionKey: false
 })
 
 
-const WishModels = mongoose.model('wishes', DataSchema)
+const WishModel = mongoose.model('wishes', DataSchema)
 module.exports = WishModel
