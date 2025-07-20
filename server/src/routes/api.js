@@ -6,6 +6,7 @@ const productController = require('./../controllers/ProductController')
 const userController = require('./../controllers/UserController')
 const AuthVerification = require('./../middleware/AuthVerification')
 const wishListController = require('./../controllers/WishListController')
+const cartListController = require('./../controllers/CartListController')
 
 // product 
 router.get('/productBrands', productController.ProductBrandList)
@@ -29,11 +30,17 @@ router.get('/updateProfile', AuthVerification, userController.updateProfile)
 router.get('/readProfile', AuthVerification, userController.readProfile)
 
 
-// wishList
+// Wish List
 router.get('/WishList', AuthVerification, wishListController.wishList)
 router.post('/saveWishList', AuthVerification, wishListController.saveWishList)
 router.get('/removeWishList', AuthVerification, wishListController.removeWishList)
 
+
+// Cart List 
+router.get('/cartList', AuthVerification, cartListController.cartsList)
+router.post('/createCartList', AuthVerification, cartListController.createCartList)
+router.post('/updateCartList/:cartID', AuthVerification, cartListController.updateCartList)
+router.get('/removeCartList', AuthVerification, cartListController.removeCartList)
 
 
 // API routing end point 
