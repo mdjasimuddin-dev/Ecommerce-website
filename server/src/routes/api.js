@@ -30,6 +30,7 @@ router.get('/readProfile', AuthVerification, userController.readProfile)
 
 
 // wishList
+router.get('/WishList', AuthVerification, wishListController.wishList)
 router.post('/saveWishList', AuthVerification, wishListController.saveWishList)
 router.get('/removeWishList', AuthVerification, wishListController.removeWishList)
 

@@ -1,7 +1,8 @@
-const { saveWishListService, RemoveWishListService } = require("../services/WishListServices")
+const { saveWishListService, RemoveWishListService, WishListService } = require("../services/WishListServices")
 
 exports.wishList = async (req, res) => {
-
+    const result = await WishListService(req)
+    res.status(200).json(result)
 }
 
 
