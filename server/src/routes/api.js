@@ -7,6 +7,7 @@ const userController = require('./../controllers/UserController')
 const AuthVerification = require('./../middleware/AuthVerification')
 const wishListController = require('./../controllers/WishListController')
 const cartListController = require('./../controllers/CartListController')
+const invoiceController = require('./../controllers/InvoiceController')
 
 // product 
 router.get('/productBrands', productController.ProductBrandList)
@@ -41,6 +42,15 @@ router.get('/cartList', AuthVerification, cartListController.cartsList)
 router.post('/createCartList', AuthVerification, cartListController.createCartList)
 router.post('/updateCartList/:cartID', AuthVerification, cartListController.updateCartList)
 router.get('/removeCartList', AuthVerification, cartListController.removeCartList)
+
+
+// Invoice and Payment
+router.get('/invoiceList', AuthVerification, invoiceController.invoiceList)
+router.post('/createInvoice', AuthVerification, invoiceController.createInvoiceList)
+router.get('/cancelPayment', AuthVerification, invoiceController.CancelInvoiceList)
+router.get('/failPayment', AuthVerification, invoiceController.CancelInvoiceList)
+router.get('/ipnPayment', AuthVerification, invoiceController.IPNInvoiceList)
+router.get('/successPayment', AuthVerification, invoiceController.successInvoiceList)
 
 
 // API routing end point 
