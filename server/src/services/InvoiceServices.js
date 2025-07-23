@@ -5,7 +5,6 @@ const InvoiceModel = require("../models/InvoiceModel")
 const InvoiceProductModel = require("../models/InvoiceProductModel")
 const PaymentSettingModel = require("./../models/PaymentSettingModel")
 const ObjectId = mongoose.Types.ObjectId
-const SSLCommerzPayment = require('sslcommerz-lts')
 const FormData = require('form-data')
 const axios = require('axios')
 
@@ -126,7 +125,7 @@ const createInvoiceService = async (req) => {
 
         // console.log(paymentSettings);
 
-        
+
         let form = new FormData()
         // payment related mandatory 
         form.append('store_id', paymentSettings[0]['store_Id'])
@@ -135,10 +134,10 @@ const createInvoiceService = async (req) => {
         form.append('currency', paymentSettings[0]['currency'])
         form.append('tran_id', tran_id)
         form.append('product_category', "MJ SOFT BD Category")
-        form.append('success_url', paymentSettings[0]['success_url'])
-        form.append('fail_url', paymentSettings[0]['fail_url'])
-        form.append('cancel_url', paymentSettings[0]['cancel_url'])
-        form.append('ipn_url', paymentSettings[0]['ipn_url'])
+        form.append('success_url', `${paymentSettings[0]['success_url']}/${tran_id}`)
+        form.append('fail_url', `${paymentSettings[0]['fail_url']}/${tran_id}`)
+        form.append('cancel_url', `${paymentSettings[0]['cancel_url']}/${tran_id}`)
+        form.append('ipn_url', `${paymentSettings[0]['ipn_url']}/${tran_id}`)
 
         // Customer Information
         form.append('cus_name', profile[0]['cus_name'])
@@ -178,25 +177,46 @@ const createInvoiceService = async (req) => {
 }
 
 
+const successPaymentService = async (req) => {
+    try {
+        const trxId = req.params.trxId
+        await InvoiceModel.updateOne({ tran_id: trxId }, { payment_status: 'success' })
+        return { status: 'success', message: "Payment Successful" }
+    } catch (error) {
+        return { status: 'fail', message: error.message }
+    }
+}
 
-const cancelInvoiceService = async (req) => {
+
+
+const failPaymentService = async (req) => {
+    try {
+        const trxId = req.params.trxId
+        await InvoiceModel.updateOne({ tran_id: trxId }, { payment_status: 'Fail' })
+        return { status: 'success', message: "Payment Fail" }
+    } catch (error) {
+        return { status: 'fail', message: error.message }
+    }
+}
+
+
+const cancelPaymentService = async (req) => {
+    try {
+        const trxId = req.params.trxId
+        await InvoiceModel.updateOne({ tran_id: trxId }, { payment_status: 'cancel' })
+        return { status: 'success', message: "Payment Cancel" }
+    } catch (error) {
+        return { status: 'fail', message: error.message }
+    }
+}
+
+
+const IPNPaymentService = async (req) => {
 
 }
 
 
-const failInvoiceService = async (req) => {
-
-}
 
 
-const IPNInvoiceService = async (req) => {
 
-}
-
-
-const successInvoiceService = async (req) => {
-
-}
-
-
-module.exports = { invoiceListService, createInvoiceService, cancelInvoiceService, failInvoiceService, IPNInvoiceService, successInvoiceService }
+module.exports = { invoiceListService, createInvoiceService, successPaymentService, failPaymentService, cancelPaymentService, IPNPaymentService, }

@@ -47,10 +47,11 @@ router.get('/removeCartList', AuthVerification, cartListController.removeCartLis
 // Invoice and Payment
 router.get('/invoiceList', AuthVerification, invoiceController.invoiceList)
 router.post('/createInvoice', AuthVerification, invoiceController.createInvoiceList)
-router.get('/cancelPayment', AuthVerification, invoiceController.CancelInvoiceList)
-router.get('/failPayment', AuthVerification, invoiceController.CancelInvoiceList)
-router.get('/ipnPayment', AuthVerification, invoiceController.IPNInvoiceList)
-router.get('/successPayment', AuthVerification, invoiceController.successInvoiceList)
+router.post('/ssl-payment-success/:trxId', invoiceController.paymentSuccess)
+router.post('/ssl-payment-fail/:trxId', invoiceController.paymentFail)
+router.post('/ssl-payment-cancel/:trxId', invoiceController.paymentCancel)
+router.post('/ssl-payment-ipn/:trxId', invoiceController.IpnPayment)
+
 
 
 // API routing end point 
