@@ -1,10 +1,13 @@
-const { IPNInvoiceList } = require("../controllers/InvoiceController")
 const mongoose = require('mongoose')
 const CartModel = require("../models/CartModel")
 const ProfileModel = require("../models/ProfileModel")
 const InvoiceModel = require("../models/InvoiceModel")
 const InvoiceProductModel = require("../models/InvoiceProductModel")
+const PaymentSettingModel = require("./../models/PaymentSettingModel")
 const ObjectId = mongoose.Types.ObjectId
+const SSLCommerzPayment = require('sslcommerz-lts')
+const FormData = require('form-data')
+const axios = require('axios')
 
 const invoiceListService = async (req) => {
     try {
@@ -61,7 +64,7 @@ const createInvoiceService = async (req) => {
 
         // step-03, Transaction Id and Others 
         const tran_id = Math.floor(10000000 + Math.random() * 90000000)
-        const val_id = 0
+        const val_id = "0"
         const delivery_status = "pending"
         const payment_status = "pending"
 
@@ -79,9 +82,24 @@ const createInvoiceService = async (req) => {
             vat: vat,
         })
 
+
         // step-05, create product Invoice
         const invoice_id = createInvoice['_id']
 
+        // const invoiceProduct = cartProductList.map(item => ({
+        //     userID: user_id,
+        //     invoiceID: invoice_id,
+        //     productID: item.productID,
+        //     payable: payable,
+        //     qty: item.qty,
+        //     price: item.product.discount ? item.product.discountPrice : item.product.price,
+        //     color: item.color,
+        //     size: item.size
+        // }))
+
+
+        // const invoiceProductData = await InvoiceProductModel.insertMany(invoiceProduct);
+        // console.log(invoiceProductData);
         cartProductList.forEach(async (item) => {
             await InvoiceProductModel.create({
                 userID: user_id,
@@ -89,18 +107,71 @@ const createInvoiceService = async (req) => {
                 productID: item.productID,
                 payable: payable,
                 qty: item.qty,
-                price: item.product.discount ? item.product.discountPrice : item.product.price,
+                price: item.product.discount ? parseFloat(item.product.discountPrice) : parseFloat(item.product.price),
                 color: item.color,
                 size: item.size
             })
         })
 
-
         // step-06, Remove product from cart list after payment 
-        await CartModel.deleteMany({ userID: user_id })
+        // await CartModel.deleteMany({ userID: user_id })
 
 
-        return { status: 'success', invoice_id }
+
+        // Step-07 Prepare SSL Payment
+        const paymentSettings = await PaymentSettingModel.find()
+        if (!paymentSettings) {
+            return { status: 'fail', message: 'Payment settings not found in database.' };
+        }
+
+        // console.log(paymentSettings);
+
+        
+        let form = new FormData()
+        // payment related mandatory 
+        form.append('store_id', paymentSettings[0]['store_Id'])
+        form.append('store_passwd', paymentSettings[0]['store_passwd'])
+        form.append('total_amount', payable.toString())
+        form.append('currency', paymentSettings[0]['currency'])
+        form.append('tran_id', tran_id)
+        form.append('product_category', "MJ SOFT BD Category")
+        form.append('success_url', paymentSettings[0]['success_url'])
+        form.append('fail_url', paymentSettings[0]['fail_url'])
+        form.append('cancel_url', paymentSettings[0]['cancel_url'])
+        form.append('ipn_url', paymentSettings[0]['ipn_url'])
+
+        // Customer Information
+        form.append('cus_name', profile[0]['cus_name'])
+        form.append('cus_email', profile[0]['cus_email'])
+        form.append('cus_phone', profile[0]['cus_phone'])
+        form.append('cus_add1', profile[0]['cus_add'])
+        form.append('cus_postcode', profile[0]['cus_postcode'])
+        form.append('cus_city', profile[0]['cus_city'])
+        form.append('cus_state', profile[0]['cus_state'])
+        form.append('cus_country', profile[0]['cus_country'])
+
+        // Shipment Information
+        form.append('shipping_method', 'YES')
+        form.append('num_of_item', 1)
+        form.append('weight_of_items', 0.5)
+        form.append('logistic_pickup_id', "MJx524df5dfad")
+        form.append('logistic_delivery_type', 'Home')
+        form.append('ship_name', profile[0]['ship_name'])
+        form.append('ship_add1', profile[0]['ship_add'])
+        form.append('ship_postcode', profile[0]['ship_postcode'])
+        form.append('ship_city', profile[0]['ship_city'])
+        form.append('ship_state', profile[0]['ship_state'])
+        form.append('ship_country', profile[0]['ship_country'])
+
+        // Product Information
+        form.append('product_name', 'According Invoice')
+        form.append('product_category', 'According Invoice')
+        form.append('product_profile', 'According Invoice')
+
+
+        const SSLRes = await axios.post(paymentSettings[0]['init_url'], form)
+
+        return { status: 'success', data: SSLRes.data }
     } catch (error) {
         return { status: 'fail', message: error.message }
     }
