@@ -7,5 +7,5 @@ const DataSchema = mongoose.Schema({
 }, {
     timestamps: true, versionKey: false
 })
-const FeatureModel = mongoose.model('paymentSettings', DataSchema)
+const FeatureModel = mongoose.model('features', DataSchema)
 module.exports = FeatureModel

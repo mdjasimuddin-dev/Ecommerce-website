@@ -171,7 +171,9 @@ const createInvoiceService = async (req) => {
 const successPaymentService = async (req) => {
     try {
         const trxId = req.params.trxId
+        const invoice = await InvoiceModel.findOne({ tran_id: trxId });
         await InvoiceModel.updateOne({ tran_id: trxId }, { payment_status: 'success' })
+        await CartModel.deleteMany({ userID: invoice.userID })
         return { status: 'success', message: "Payment Successful" }
     } catch (error) {
         return { status: 'fail', message: error.message }

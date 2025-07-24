@@ -8,6 +8,7 @@ const AuthVerification = require('./../middleware/AuthVerification')
 const wishListController = require('./../controllers/WishListController')
 const cartListController = require('./../controllers/CartListController')
 const invoiceController = require('./../controllers/InvoiceController')
+const featuresController = require('./../controllers/FeaturesController')
 
 // product 
 router.get('/productBrands', productController.ProductBrandList)
@@ -55,6 +56,12 @@ router.post('/ssl-payment-ipn/:trxId', invoiceController.IpnPayment)
 router.get('/invoiceList', AuthVerification, invoiceController.invoiceList)
 router.get('/invoiceProductList/:invoiceID', AuthVerification, invoiceController.invoiceProductList)
 
+
+// feature
+router.get('/featuresList', AuthVerification, featuresController.featuresList)
+
+// review 
+router.post('/createReview', AuthVerification, productController.createReview)
 
 
 // API routing end point 
