@@ -45,12 +45,15 @@ router.get('/removeCartList', AuthVerification, cartListController.removeCartLis
 
 
 // Invoice and Payment
-router.get('/invoiceList', AuthVerification, invoiceController.invoiceList)
 router.post('/createInvoice', AuthVerification, invoiceController.createInvoiceList)
 router.post('/ssl-payment-success/:trxId', invoiceController.paymentSuccess)
 router.post('/ssl-payment-fail/:trxId', invoiceController.paymentFail)
 router.post('/ssl-payment-cancel/:trxId', invoiceController.paymentCancel)
 router.post('/ssl-payment-ipn/:trxId', invoiceController.IpnPayment)
+
+// user Invoice find
+router.get('/invoiceList', AuthVerification, invoiceController.invoiceList)
+router.get('/invoiceProductList/:invoiceID', AuthVerification, invoiceController.invoiceProductList)
 
 
 

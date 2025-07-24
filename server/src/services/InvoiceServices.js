@@ -8,16 +8,7 @@ const ObjectId = mongoose.Types.ObjectId
 const FormData = require('form-data')
 const axios = require('axios')
 
-const invoiceListService = async (req) => {
-    try {
-        const user_id = new ObjectId(req.headers.userID)
-        const email = new ObjectId(req.headers.userEmail)
 
-        console.log(email, user_id);
-    } catch (error) {
-        return { status: 'fail', message: error.message }
-    }
-}
 
 
 const createInvoiceService = async (req) => {
@@ -212,11 +203,55 @@ const cancelPaymentService = async (req) => {
 
 
 const IPNPaymentService = async (req) => {
+    try {
+        const trxId = req.params.trxId
+        const status = req.body.status
+        await InvoiceModel.updateOne({ tran_id: trxId }, { payment_status: status })
+        return { status: 'success', message: status }
+    } catch (error) {
+        return { status: 'fail', message: error.message }
+    }
+}
 
+
+const invoiceListService = async (req) => {
+    try {
+        const user_id = new ObjectId(req.headers.userID)
+        let data = await InvoiceModel.find({ userID: user_id })
+
+        return { status: 'success', data }
+
+    } catch (error) {
+        return { status: 'fail', message: error.message }
+    }
+}
+
+
+const invoiceProductListService = async (req) => {
+    try {
+        const user_id = new ObjectId(req.headers.userID)
+        const invoiceID = new ObjectId(req.params.invoiceID)
+
+
+        const MatchStage = { $match: { userID: user_id, invoiceID: invoiceID } }
+        const joinProductStage = { $lookup: { from: 'products', localField: 'productID', foreignField: '_id', as: 'product' } }
+        const unwindProductStage = { $unwind: '$product' }
+
+        let data = await InvoiceProductModel.aggregate([
+            MatchStage,
+            joinProductStage,
+            unwindProductStage
+        ])
+
+        return { status: 'success', data }
+
+    } catch (error) {
+        return { status: 'fail', message: error.message }
+    }
 }
 
 
 
 
 
-module.exports = { invoiceListService, createInvoiceService, successPaymentService, failPaymentService, cancelPaymentService, IPNPaymentService, }
+module.exports = { invoiceListService, createInvoiceService, successPaymentService, failPaymentService, cancelPaymentService, IPNPaymentService, invoiceProductListService }
