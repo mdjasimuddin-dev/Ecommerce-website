@@ -4,7 +4,7 @@ import Lottie from "lottie-react";
 
 const SliderSkeleton = () => {
   return (
-    <div className=" bg-gray-300 flex mt-16 md:mt-28  justify-center p-2 md:p-4 font-sans">
+    <div className=" bg-gray-300 flex mt-16 md:mt-28  justify-center p-2 md:p-4 lg:p-10 font-sans">
       <div className="w-full bg-white rounded-lg shadow-xl p-2 md:p-6 animate-pulse">
         <div className="w-full md:h-[550px] bg-gray-100 rounded-md mb-2 md:mb-6 grid grid-cols-2 justify-center items-center">
           <div className="p-2 md:p-8 lg:28">
