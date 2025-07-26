@@ -1,5 +1,4 @@
 import Lottie from "lottie-react";
-import React from "react";
 import placeholderImage from "./../assets/AnimImage/image.json";
 import Skeleton from "react-loading-skeleton";
 

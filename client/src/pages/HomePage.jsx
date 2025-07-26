@@ -1,5 +1,6 @@
 import CategorySkeleton from "../skeleton/CategorySkeleton";
 import FeatureSkeleton from "../skeleton/FeatureSkeleton";
+import ProductSkeleton from "../skeleton/ProductSkeleton";
 import SliderSkeleton from "../skeleton/SliderSkeleton";
 
 const HomePage = () => {
@@ -27,12 +28,13 @@ const HomePage = () => {
         <CategorySkeleton />
 
         <div className="text-center text-4xl font-bold space-y-2">
-          <h1>Product</h1>
+          <h1>Most Popular Product</h1>
           <p className="text-base font-normal">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
             doloribus!
           </p>
         </div>
+        <ProductSkeleton />
       </div>
     </div>
   );
