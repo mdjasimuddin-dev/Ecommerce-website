@@ -1,3 +1,4 @@
+import BrandSkeleton from "../skeleton/BrandSkeleton";
 import CategorySkeleton from "../skeleton/CategorySkeleton";
 import FeatureSkeleton from "../skeleton/FeatureSkeleton";
 import ProductSkeleton from "../skeleton/ProductSkeleton";
@@ -35,6 +36,15 @@ const HomePage = () => {
           </p>
         </div>
         <ProductSkeleton />
+
+        <div className="text-center text-4xl font-bold space-y-2">
+          <h1>Brand Collection</h1>
+          <p className="text-base font-normal">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
+            doloribus!
+          </p>
+        </div>
+        <BrandSkeleton />
       </div>
     </div>
   );
