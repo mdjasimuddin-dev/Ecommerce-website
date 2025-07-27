@@ -29,8 +29,17 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 
+const corsOptions = {
+    origin: [
+        'http://localhost:5173',
+        'http://localhost:5174',
+    ],
+    credentials: true
+}
+
+
 // 3. Security Middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(helmet());
 app.use(hpp());
 app.use(mongoSanitize());  // Make sure it's after body parser
