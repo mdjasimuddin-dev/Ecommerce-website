@@ -1,17 +1,16 @@
 import productStore from "../../store/ProductStore";
-import ProductSkeleton from "../../skeleton/ProductSkeleton";
+import BrandSkeleton from "./../../skeleton/BrandSkeleton";
 
-const Product = () => {
-  const { productRemark } = productStore();
+const Brands = () => {
+  const { brandList } = productStore();
 
-  if (productRemark === null) {
-    return <ProductSkeleton />;
+  if (brandList === null) {
+    return <BrandSkeleton />;
   }
-
   return (
     <div>
       <div className="text-center text-2xl md:text-4xl font-bold space-y-2 my-5 mt-10">
-        <h1>Most Popular Product</h1>
+        <h1>Brand Collection</h1>
         <p className="text-base font-normal">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
           doloribus!
@@ -21,4 +20,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default Brands;

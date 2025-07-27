@@ -6,9 +6,9 @@ const FeatureSkeleton = () => {
 
   return (
     <div className={`w-full grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-5 lg:gap-10 p-2 md:p-5 lg:p-10`}>
-      {Array.from({ length: 4 }).map(() => {
+      {Array.from({ length: 4 }).map((item, index) => {
         return (
-          <div className="grid grid-cols-3 md:gap-5 bg-white p-2 lg:p-5">
+          <div key={index} className="grid grid-cols-3 md:gap-5 bg-white p-2 lg:p-5">
             <div>
               <Lottie
                 className="lg:w-20"
