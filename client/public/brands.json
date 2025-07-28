@@ -1,0 +1,62 @@
+[
+    {
+        "brandName": "Apple",
+        "brandImg": "https://w7.pngwing.com/pngs/589/546/png-transparent-apple-logo-new-york-city-brand-computer-apple-company-computer-logo.png"
+    },
+    {
+        "brandName": "Microsoft",
+        "brandImg": "https://logos-world.net/wp-content/uploads/2020/09/Microsoft-Logo.png"
+    },
+    {
+        "brandName": "Samsung",
+        "brandImg": "https://bsmedia.business-standard.com/_media/bs/img/about-page/1562575696.png"
+    },
+    {
+        "brandName": "Realme",
+        "brandImg": "https://www.peoplewala.in/wp-content/uploads/2024/07/realme.png"
+    },
+    {
+        "brandName": "OnePlus",
+        "brandImg": "https://logos-world.net/wp-content/uploads/2023/03/OnePlus-Logo.png"
+    },
+    {
+        "brandName": "Nokia",
+        "brandImg": "https://logos-world.net/wp-content/uploads/2020/10/Nokia-Logo-1978.png"
+    },
+    {
+        "brandName": "Xiaomi",
+        "brandImg": "https://1000logos.net/wp-content/uploads/2018/10/Xiaomi-Logo-2019.png"
+    },
+    {
+        "brandName": "Google",
+        "brandImg": "https://cdn.logojoy.com/wp-content/uploads/20230801145635/Google_logo_2013-2015-600x206.png"
+    },
+    {
+        "brandName": "Lenovo",
+        "brandImg": "https://upload.wikimedia.org/wikipedia/commons/0/03/Lenovo_Global_Corporate_Logo.png"
+    },
+    {
+        "brandName": "Asus",
+        "brandImg": "https://logos-world.net/wp-content/uploads/2020/07/Asus-Logo-1995-present.png"
+    },
+    {
+        "brandName": "Huawei",
+        "brandImg": "https://logos-world.net/wp-content/uploads/2020/05/Huawei-Logo-2006.png"
+    },
+    {
+        "brandName": "Infinix",
+        "brandImg": "https://blog.daraz.com.bd/wp-content/uploads/2017/06/Infinix-logo.png"
+    },
+    {
+        "brandName": "Oppo",
+        "brandImg": "https://csa-iot.org/wp-content/uploads/2021/12/OPPO-LOGO-1-2048x1448.png"
+    },
+    {
+        "brandName": "Sony",
+        "brandImg": "https://logos-world.net/wp-content/uploads/2020/04/Sony-Logo.png"
+    },
+    {
+        "brandName": "Vivo",
+        "brandImg": "https://assets.gadgets360cdn.com/pricee/assets/brand/og-vivo-logo.png"
+    }
+]

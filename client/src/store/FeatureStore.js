@@ -5,8 +5,9 @@ const FeatureStore = create((set) => ({
     featureList: null,
     featureAPIRequest: async () => {
         const res = await axiosPublic.get('/featuresList')
+        console.log(res);
         if (res?.data?.status === 'success') {
-            set({ featureList: res?.data?.data})
+            set({ featureList: res?.data?.data })
         }
     }
 }))

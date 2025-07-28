@@ -6,6 +6,7 @@ const productStore = create((set) => ({
     brandList: null,
     brandRequestApi: async () => {
         const res = await axiosPublic.get('/productBrands')
+        console.log('Brands : ',res.data.data);
         if (res.data.status === 'success') {
             set({ brandList: res.data.data })
         }
@@ -22,6 +23,7 @@ const productStore = create((set) => ({
     sliderList: null,
     sliderRequestApi: async () => {
         const res = await axiosPublic.get('/productSliders')
+        console.log('Slider : ',res.data.data);
         if (res.data.status === 'success') {
             set({ sliderList: res.data.data })
         }

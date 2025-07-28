@@ -5,9 +5,9 @@ import Skeleton from "react-loading-skeleton";
 const CategorySkeleton = () => {
   return (
     <div className={`w-full grid grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-2 md:gap-5 p-2 md:p-5`}>
-      {Array.from({ length: 16 }).map(() => {
+      {Array.from({ length: 16 }).map((index) => {
         return (
-          <div className="bg-white p-2 md:p-5">
+          <div className="bg-white p-2 md:p-5" key={index}>
             <div className="flex flex-col justify-center items-center">
               <Lottie
                 className="w-20"

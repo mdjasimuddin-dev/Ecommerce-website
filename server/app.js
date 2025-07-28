@@ -33,6 +33,11 @@ const corsOptions = {
     origin: [
         'http://localhost:5173',
         'http://localhost:5174',
+        'https://photo.teamrabbil.com',
+        'https://ibb.co',
+        'https://upload.wikimedia.org',
+        'https://thumbs.dreamstime.com'
+
     ],
     credentials: true
 }
