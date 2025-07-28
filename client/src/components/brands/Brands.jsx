@@ -15,6 +15,13 @@ const Brands = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
           doloribus!
         </p>
+
+        {brandList.map((item, index) => {
+          <div key={index}>
+            <img src={item.brandImg} alt="" />
+            <h1>{item.BrandName}</h1>
+          </div>;
+        })}
       </div>
     </div>
   );
