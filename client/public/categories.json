@@ -1,0 +1,64 @@
+[{
+  "categoryName": "Sports & Fitness",
+  "categoryImg": "https://example.com/images/sports.jpg"
+},
+{
+  "categoryName": "Books",
+  "categoryImg": "https://example.com/images/books.jpg"
+},
+{
+  "categoryName": "Health & Beauty",
+  "categoryImg": "https://example.com/images/health-beauty.jpg"
+},
+{
+  "categoryName": "Mobile Phones",
+  "categoryImg": "https://example.com/images/phones.jpg"
+},
+{
+  "categoryName": "Gaming",
+  "categoryImg": "https://example.com/images/gaming.jpg"
+},
+{
+  "categoryName": "Toys & Games",
+  "categoryImg": "https://example.com/images/toys.jpg"
+},
+{
+  "categoryName": "Groceries",
+  "categoryImg": "https://example.com/images/groceries.jpg"
+},
+{
+  "categoryName": "Pet Supplies",
+  "categoryImg": "https://example.com/images/pets.jpg"
+},
+{
+  "categoryName": "Furniture",
+  "categoryImg": "https://example.com/images/furniture.jpg"
+},
+{
+  "categoryName": "Office Supplies",
+  "categoryImg": "https://example.com/images/office.jpg"
+},
+{
+  "categoryName": "Electronics",
+  "categoryImg": "https://example.com/images/electronics.jpg"
+},
+{
+  "categoryName": "Home & Kitchen",
+  "categoryImg": "https://example.com/images/home-kitchen.jpg"
+},
+{
+  "categoryName": "Fashion",
+  "categoryImg": "https://example.com/images/fashion.jpg"
+},
+{
+  "categoryName": "Automotive",
+  "categoryImg": "https://example.com/images/automotive.jpg"
+},
+{
+  "categoryName": "Music Instruments",
+  "categoryImg": "https://example.com/images/music.jpg"
+},
+{
+  "categoryName": "Laptop",
+  "categoryImg": "https://example.com/images/laptop.jpg"
+}]

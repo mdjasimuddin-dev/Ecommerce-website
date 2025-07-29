@@ -1,0 +1,1643 @@
+[
+    {
+        "title": "Nike Flex Run 2024",
+        "shortDes": "Lightweight and flexible running shoes for everyday training.",
+        "price": "95",
+        "discount": true,
+        "discountPrice": "79",
+        "image": "https://example.com/products/nike_flex_run.jpg",
+        "star": "4.6",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325f"
+        },
+        "brandID": {
+            "$oid": "60d0fe4f1a23c3001c34a1b1"
+        }
+    },
+
+    {
+        "title": "Dumbbell Set (Pair, 10kg)",
+        "shortDes": "Versatile dumbbells for strength training and home workouts.",
+        "price": "60",
+        "discount": false,
+        "discountPrice": "60",
+        "image": "https://example.com/products/dumbbell_set.jpg",
+        "star": "4.4",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325f"
+        },
+        "brandID": {
+            "$oid": "60d0fe4f1a23c3001c34a1b3"
+        }
+    },
+
+    {
+        "title": "Atomic Habits by James Clear",
+        "shortDes": "An easy and proven way to build good habits & break bad ones.",
+        "price": "20",
+        "discount": true,
+        "discountPrice": "16",
+        "image": "https://example.com/products/atomic_habits.jpg",
+        "star": "4.9",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325e"
+        },
+        "brandID": {
+            "$oid": "60d0fe4f1a23c3001c34a1b4"
+        }
+    },
+
+    {
+        "title": "Neutrogena Hydro Boost Water Gel",
+        "shortDes": "Hydrating face gel for dry skin, non-comedogenic.",
+        "price": "18",
+        "discount": false,
+        "discountPrice": "18",
+        "image": "https://example.com/products/neutrogena_gel.jpg",
+        "star": "4.7",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3261"
+        },
+        "brandID": {
+            "$oid":"60d0fe4f1a23c3001c34a1b5"
+        }
+    },
+
+    {
+        "title": "Apple iPhone 15 Pro",
+        "shortDes": "Cutting-edge smartphone with A17 Pro chip and Titanium design.",
+        "price": "999",
+        "discount": false,
+        "discountPrice": "999",
+        "image": "https://example.com/products/iphone15_pro.jpg",
+        "star": "4.9",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f2"
+        }
+    },
+
+    {
+        "title": "Samsung Galaxy S24 Ultra",
+        "shortDes": "Ultimate Android experience with advanced AI and camera.",
+        "price": "1199",
+        "discount": true,
+        "discountPrice": "1099",
+        "image": "https://example.com/products/s24_ultra.jpg",
+        "star": "4.8",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f4"
+        }
+    },
+
+    {
+        "title": "Realme 12 Pro+",
+        "shortDes": "Stylish smartphone with periscope telephoto camera.",
+        "price": "399",
+        "discount": false,
+        "discountPrice": "399",
+        "image": "https://example.com/products/realme12_proplus.jpg",
+        "star": "4.5",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f5"
+        }
+    },
+
+    {
+        "title": "OnePlus 12R",
+        "shortDes": "Powerful performance with a vibrant display and long battery life.",
+        "price": "499",
+        "discount": true,
+        "discountPrice": "450",
+        "image": "https://example.com/products/oneplus12r.jpg",
+        "star": "4.6",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f6"
+        }
+    },
+
+    {
+        "title": "Nokia G42 5G",
+        "shortDes": "Durable and repairable smartphone with 5G connectivity.",
+        "price": "249",
+        "discount": false,
+        "discountPrice": "249",
+        "image": "https://example.com/products/nokia_g42.jpg",
+        "star": "4.1",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f7"
+        }
+    },
+
+    {
+        "title": "Xiaomi Redmi Note 13 Pro+",
+        "shortDes": "Flagship-level experience in a mid-range smartphone.",
+        "price": "449",
+        "discount": true,
+        "discountPrice": "399",
+        "image": "https://example.com/products/xiaomi_note13proplus.jpg",
+        "star": "4.7",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f8"
+        }
+    },
+    {
+        "title": "Google Pixel 8 Pro",
+        "shortDes": "Best-in-class camera and AI features for a smarter experience.",
+        "price": "899",
+        "discount": false,
+        "discountPrice": "899",
+        "image": "https://example.com/products/pixel8_pro.jpg",
+        "star": "4.8",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f9"
+        }
+    },
+    {
+        "title": "Huawei P60 Pro",
+        "shortDes": "Stunning design with a powerful camera system.",
+        "price": "699",
+        "discount": true,
+        "discountPrice": "629",
+        "image": "https://example.com/products/huawei_p60_pro.jpg",
+        "star": "4.6",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fc"
+        }
+    },
+    {
+        "title": "Infinix Note 40",
+        "shortDes": "All-round fast charge 2.0 with bypass charging.",
+        "price": "200",
+        "discount": false,
+        "discountPrice": "200",
+        "image": "https://example.com/products/infinix_note40.jpg",
+        "star": "4.2",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fd"
+        }
+    },
+    {
+        "title": "Oppo Reno 11F 5G",
+        "shortDes": "Ultra-clear portrait camera and long-lasting battery.",
+        "price": "350",
+        "discount": true,
+        "discountPrice": "300",
+        "image": "https://example.com/products/oppo_reno11f.jpg",
+        "star": "4.4",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fe"
+        }
+    },
+    {
+        "title": "Sony Xperia 1 V",
+        "shortDes": "Cinema-quality camera and immersive 4K display.",
+        "price": "1299",
+        "discount": false,
+        "discountPrice": "1299",
+        "image": "https://example.com/products/sony_xperia1v.jpg",
+        "star": "4.7",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585ff"
+        }
+    },
+    {
+        "title": "Vivo V30",
+        "shortDes": "Ultra-slim design with professional-grade imaging.",
+        "price": "450",
+        "discount": true,
+        "discountPrice": "400",
+        "image": "https://example.com/products/vivo_v30.jpg",
+        "star": "4.5",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa19215258600"
+        }
+    },
+    {
+        "title": "Microsoft Surface Laptop 5",
+        "shortDes": "Sleek and portable laptop for everyday productivity.",
+        "price": "999",
+        "discount": false,
+        "discountPrice": "999",
+        "image": "https://example.com/products/surface_laptop5.jpg",
+        "star": "4.7",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf326a"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f3"
+        }
+    },
+    {
+        "title": "Lenovo IdeaPad Slim 5",
+        "shortDes": "Lightweight and powerful for work and entertainment.",
+        "price": "750",
+        "discount": true,
+        "discountPrice": "680",
+        "image": "https://example.com/products/lenovo_ideapad_slim5.jpg",
+        "star": "4.4",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf326a"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fa"
+        }
+    },
+    {
+        "title": "ASUS ROG Strix G15",
+        "shortDes": "High-performance gaming laptop with vibrant display.",
+        "price": "1400",
+        "discount": false,
+        "discountPrice": "1400",
+        "image": "https://example.com/products/asus_rog_strix.jpg",
+        "star": "4.8",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf326a"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fb"
+        }
+    },
+    {
+        "title": "HP Envy x360 Convertible",
+        "shortDes": "Flexible 2-in-1 laptop for creativity and productivity.",
+        "price": "899",
+        "discount": true,
+        "discountPrice": "800",
+        "image": "https://example.com/products/hp_envy_x360.jpg",
+        "star": "4.5",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf326a"
+        },
+        "brandID": {
+            "$oid":"60d0fe4f1a23c3001c34a1c9"
+        }
+    },
+    {
+        "title": "Acer Swift 3 Laptop",
+        "shortDes": "Slim and light laptop perfect for students and professionals.",
+        "price": "650",
+        "discount": false,
+        "discountPrice": "650",
+        "image": "https://example.com/products/acer_swift3.jpg",
+        "star": "4.3",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf326a"
+        },
+        "brandID": {
+            "$oid": "60d0fe4f1a23c3001c34a1b3"
+        }
+    },
+    {
+        "title": "Logitech MX Master 3S Mouse",
+        "shortDes": "Advanced wireless mouse for ultimate comfort and productivity.",
+        "price": "99",
+        "discount": true,
+        "discountPrice": "85",
+        "image": "https://example.com/products/logitech_mouse.jpg",
+        "star": "4.8",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3264"
+        },
+        "brandID": {
+            "$oid":"60d0fe4f1a23c3001c34a1b3"
+        }
+    },
+    {
+        "title": "Bose QuietComfort Earbuds II",
+        "shortDes": "World-class noise cancellation and personalized sound.",
+        "price": "299",
+        "discount": false,
+        "discountPrice": "299",
+        "image": "https://example.com/products/bose_qc_earbuds.jpg",
+        "star": "4.7",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid":"60d0fe4f1a23c3001c34a1b3"
+        }
+    },
+    {
+        "title": "LG OLED C3 Series 65-inch TV",
+        "shortDes": "Stunning visuals with self-lit pixels and powerful processor.",
+        "price": "1800",
+        "discount": true,
+        "discountPrice": "1600",
+        "image": "https://example.com/products/lg_oled_c3.jpg",
+        "star": "4.9",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid":"60d0fe4f1a23c3001c34a1b3"
+        }
+    },
+    {
+        "title": "Philips Airfryer XXL",
+        "shortDes": "Healthy frying with Rapid Air Technology.",
+        "price": "199",
+        "discount": false,
+        "discountPrice": "199",
+        "image": "https://example.com/products/philips_airfryer.jpg",
+        "star": "4.6",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325d"
+        },
+        "brandID": {
+            "$oid":"60d0fe4f1a23c3001c34a1b3"
+        }
+    },
+    {
+        "title": "Adidas Men's Training T-Shirt",
+        "shortDes": "Moisture-wicking fabric keeps you dry and comfortable.",
+        "price": "30",
+        "discount": true,
+        "discountPrice": "25",
+        "image": "https://example.com/products/adidas_tshirt.jpg",
+        "star": "4.4",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325c"
+        },
+       "brandID": {
+            "$oid":"60d0fe4f1a23c3001c34a1b3"
+        }
+    },
+    {
+        "title": "Michelin Defender T+H Tire",
+        "shortDes": "Long-lasting and fuel-efficient all-season tire.",
+        "price": "150",
+        "discount": false,
+        "discountPrice": "150",
+        "image": "https://example.com/products/michelin_tire.jpg",
+        "star": "4.7",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3262"
+        },
+        "brandID": {
+            "$oid":"60d0fe4f1a23c3001c34a1b3"
+        }
+    },
+    {
+        "title": "Fender Squier Stratocaster Pack",
+        "shortDes": "Complete electric guitar starter pack for aspiring musicians.",
+        "price": "299",
+        "discount": true,
+        "discountPrice": "250",
+        "image": "https://example.com/products/fender_strat.jpg",
+        "star": "4.6",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3268"
+        },
+        "brandID": {
+            "$oid":"60d0fe4f1a23c3001c34a1b3"
+        }
+    },
+    {
+        "title": "Xiaomi Smart Band 8 Pro",
+        "shortDes": "Large AMOLED display, GPS, and comprehensive health tracking.",
+        "price": "70",
+        "discount": false,
+        "discountPrice": "70",
+        "image": "https://example.com/products/xiaomi_band8pro.jpg",
+        "star": "4.5",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325f"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f8"
+        }
+    },
+    {
+        "title": "Microsoft Xbox Series X",
+        "shortDes": "Most powerful Xbox ever, delivering true 4K gaming.",
+        "price": "499",
+        "discount": false,
+        "discountPrice": "499",
+        "image": "https://example.com/products/xbox_series_x.jpg",
+        "star": "4.9",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3267"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f3"
+        }
+    },
+    {
+        "title": "Microsoft Surface Headphones 2",
+        "shortDes": "Comfortable over-ear headphones with superb noise cancellation.",
+        "price": "249",
+        "discount": true,
+        "discountPrice": "200",
+        "image": "https://example.com/products/surface_headphones2.jpg",
+        "star": "4.5",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f3"
+        }
+    },
+    {
+        "title": "Samsung Galaxy Watch 6",
+        "shortDes": "Advanced health tracking and stylish design.",
+        "price": "299",
+        "discount": false,
+        "discountPrice": "299",
+        "image": "https://example.com/products/galaxy_watch6.jpg",
+        "star": "4.7",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f4"
+        }
+    },
+    {
+        "title": "Realme Pad 2",
+        "shortDes": "Large display tablet for entertainment and productivity.",
+        "price": "250",
+        "discount": true,
+        "discountPrice": "220",
+        "image": "https://example.com/products/realme_pad2.jpg",
+        "star": "4.3",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f5"
+        }
+    },
+    {
+        "title": "OnePlus Buds 3",
+        "shortDes": "Seamless audio experience with dynamic drivers and ANC.",
+        "price": "99",
+        "discount": false,
+        "discountPrice": "99",
+        "image": "https://example.com/products/oneplus_buds3.jpg",
+        "star": "4.4",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f6"
+        }
+    },
+    {
+        "title": "Nokia T21 Tablet",
+        "shortDes": "Durable tablet with a long-lasting battery.",
+        "price": "220",
+        "discount": true,
+        "discountPrice": "190",
+        "image": "https://example.com/products/nokia_t21.jpg",
+        "star": "4.0",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f7"
+        }
+    },
+    {
+        "title": "Xiaomi Robot Vacuum E10",
+        "shortDes": "Smart robotic vacuum cleaner for hands-free cleaning.",
+        "price": "280",
+        "discount": false,
+        "discountPrice": "280",
+        "image": "https://example.com/products/xiaomi_robot_vacuum.jpg",
+        "star": "4.6",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325d"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f8"
+        }
+    },
+    {
+        "title": "Google Pixel Buds Pro",
+        "shortDes": "Premium earbuds with active noise cancellation and clear calls.",
+        "price": "199",
+        "discount": true,
+        "discountPrice": "169",
+        "image": "https://example.com/products/pixel_buds_pro.jpg",
+        "star": "4.7",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f9"
+        }
+    },
+    {
+        "title": "Lenovo Tab M10 Plus",
+        "shortDes": "Family-friendly tablet with a crisp display.",
+        "price": "180",
+        "discount": false,
+        "discountPrice": "180",
+        "image": "https://example.com/products/lenovo_tab_m10.jpg",
+        "star": "4.2",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fa"
+        }
+    },
+    {
+        "title": "ASUS Vivobook 15",
+        "shortDes": "Everyday laptop with a balanced performance.",
+        "price": "550",
+        "discount": true,
+        "discountPrice": "500",
+        "image": "https://example.com/products/asus_vivobook15.jpg",
+        "star": "4.3",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf326a"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fb"
+        }
+    },
+    {
+        "title": "Huawei MatePad Pro",
+        "shortDes": "High-end tablet for productivity and creativity.",
+        "price": "499",
+        "discount": false,
+        "discountPrice": "499",
+        "image": "https://example.com/products/huawei_matepad_pro.jpg",
+        "star": "4.5",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fc"
+        }
+    },
+    {
+        "title": "Infinix InBook X2 Plus",
+        "shortDes": "Affordable laptop with a vibrant display for daily tasks.",
+        "price": "450",
+        "discount": true,
+        "discountPrice": "400",
+        "image": "https://example.com/products/infinix_inbookx2plus.jpg",
+        "star": "4.0",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf326a"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fd"
+        }
+    },
+    {
+        "title": "Oppo Watch Free",
+        "shortDes": "Stylish smartwatch with comprehensive health monitoring.",
+        "price": "99",
+        "discount": false,
+        "discountPrice": "99",
+        "image": "https://example.com/products/oppo_watch_free.jpg",
+        "star": "4.3",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fe"
+        }
+    },
+    {
+        "title": "Sony WH-CH720N Headphones",
+        "shortDes": "Lightweight wireless noise-canceling headphones.",
+        "price": "149",
+        "discount": true,
+        "discountPrice": "120",
+        "image": "https://example.com/products/sony_whch720n.jpg",
+        "star": "4.5",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585ff"
+        }
+    },
+    {
+        "title": "Vivo TWS 3e Earbuds",
+        "shortDes": "Comfortable earbuds with long battery life.",
+        "price": "59",
+        "discount": false,
+        "discountPrice": "59",
+        "image": "https://example.com/products/vivo_tws3e.jpg",
+        "star": "4.1",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa19215258600"
+        }
+    },
+    {
+        "title": "Apple Watch Series 9",
+        "shortDes": "Advanced health features and brilliant always-on Retina display.",
+        "price": "399",
+        "discount": false,
+        "discountPrice": "399",
+        "image": "https://example.com/products/apple_watch9.jpg",
+        "star": "4.9",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f2"
+        }
+    },
+    {
+        "title": "Samsung Galaxy Buds2 Pro",
+        "shortDes": "Immersive sound with enhanced active noise cancellation.",
+        "price": "229",
+        "discount": true,
+        "discountPrice": "199",
+        "image": "https://example.com/products/galaxy_buds2pro.jpg",
+        "star": "4.7",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f4"
+        }
+    },
+    {
+        "title": "Realme Buds Air 5 Pro",
+        "shortDes": "Hi-Res Audio with powerful active noise cancellation.",
+        "price": "89",
+        "discount": false,
+        "discountPrice": "89",
+        "image": "https://example.com/products/realme_buds_air5pro.jpg",
+        "star": "4.5",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f5"
+        }
+    },
+    {
+        "title": "OnePlus Watch 2",
+        "shortDes": "Smartwatch with long battery life and premium design.",
+        "price": "299",
+        "discount": true,
+        "discountPrice": "260",
+        "image": "https://example.com/products/oneplus_watch2.jpg",
+        "star": "4.6",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f6"
+        }
+    },
+    {
+        "title": "Nokia Power Earbuds Lite",
+        "shortDes": "Waterproof earbuds with extended playtime.",
+        "price": "69",
+        "discount": false,
+        "discountPrice": "69",
+        "image": "https://example.com/products/nokia_earbuds_lite.jpg",
+        "star": "4.0",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f7"
+        }
+    },
+    {
+        "title": "Xiaomi Smart TV A Series 43-inch",
+        "shortDes": "Vibrant display and smart features for an immersive viewing.",
+        "price": "350",
+        "discount": true,
+        "discountPrice": "300",
+        "image": "https://example.com/products/xiaomi_smart_tv.jpg",
+        "star": "4.5",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f8"
+        }
+    },
+    {
+        "title": "Google Chromecast with Google TV",
+        "shortDes": "Stream your favorite entertainment in up to 4K HDR.",
+        "price": "50",
+        "discount": false,
+        "discountPrice": "50",
+        "image": "https://example.com/products/chromecast_googletv.jpg",
+        "star": "4.7",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f9"
+        }
+    },
+    {
+        "title": "Lenovo Smart Display 7",
+        "shortDes": "Compact smart display with Google Assistant.",
+        "price": "80",
+        "discount": true,
+        "discountPrice": "65",
+        "image": "https://example.com/products/lenovo_smart_display7.jpg",
+        "star": "4.2",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fa"
+        }
+    },
+    {
+        "title": "ASUS TUF Gaming A15",
+        "shortDes": "Durable gaming laptop with powerful performance.",
+        "price": "1100",
+        "discount": false,
+        "discountPrice": "1100",
+        "image": "https://example.com/products/asus_tuf_a15.jpg",
+        "star": "4.6",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3267"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fb"
+        }
+    },
+    {
+        "title": "Huawei MateView GT 34-inch",
+        "shortDes": "Ultrawide curved gaming monitor for immersive gameplay.",
+        "price": "550",
+        "discount": true,
+        "discountPrice": "490",
+        "image": "https://example.com/products/huawei_mateview_gt.jpg",
+        "star": "4.7",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3267"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fc"
+        }
+    },
+    {
+        "title": "Infinix Zero Ultra",
+        "shortDes": "Premium smartphone with 180W fast charging and 200MP camera.",
+        "price": "400",
+        "discount": false,
+        "discountPrice": "400",
+        "image": "https://example.com/products/infinix_zero_ultra.jpg",
+        "star": "4.4",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fd"
+        }
+    },
+    {
+        "title": "Oppo Find X6 Pro",
+        "shortDes": "Exceptional camera performance with Hasselblad imaging.",
+        "price": "899",
+        "discount": true,
+        "discountPrice": "800",
+        "image": "https://example.com/products/oppo_findx6pro.jpg",
+        "star": "4.8",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fe"
+        }
+    },
+    {
+        "title": "Sony Alpha 7 IV",
+        "shortDes": "High-resolution full-frame camera for hybrid shooters.",
+        "price": "2499",
+        "discount": false,
+        "discountPrice": "2499",
+        "image": "https://example.com/products/sony_alpha7iv.jpg",
+        "star": "4.9",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585ff"
+        }
+    },
+    {
+        "title": "Vivo X100 Pro",
+        "shortDes": "Flagship smartphone with advanced camera and performance.",
+        "price": "799",
+        "discount": true,
+        "discountPrice": "720",
+        "image": "https://example.com/products/vivo_x100_pro.jpg",
+        "star": "4.7",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa19215258600"
+        }
+    },
+    {
+        "title": "Apple iPad Air (M1)",
+        "shortDes": "Powerful and versatile tablet with Liquid Retina display.",
+        "price": "599",
+        "discount": false,
+        "discountPrice": "599",
+        "image": "https://example.com/products/ipad_air_m1.jpg",
+        "star": "4.8",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f2"
+        }
+    },
+    {
+        "title": "Samsung Galaxy Tab S9 Ultra",
+        "shortDes": "Massive AMOLED display for ultimate productivity and entertainment.",
+        "price": "1199",
+        "discount": true,
+        "discountPrice": "1099",
+        "image": "https://example.com/products/galaxy_tab_s9_ultra.jpg",
+        "star": "4.9",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f4"
+        }
+    },
+    {
+        "title": "Realme Smart TV 4K",
+        "shortDes": "Immersive 4K viewing experience with smart features.",
+        "price": "400",
+        "discount": false,
+        "discountPrice": "400",
+        "image": "https://example.com/products/realme_smart_tv.jpg",
+        "star": "4.5",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f5"
+        }
+    },
+    {
+        "title": "OnePlus Pad",
+        "shortDes": "Smooth performance and vibrant display for work and play.",
+        "price": "479",
+        "discount": true,
+        "discountPrice": "420",
+        "image": "https://example.com/products/oneplus_pad.jpg",
+        "star": "4.6",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f6"
+        }
+    },
+    {
+        "title": "Nokia Essential Wireless Headphones",
+        "shortDes": "Comfortable on-ear headphones with clear sound.",
+        "price": "50",
+        "discount": false,
+        "discountPrice": "50",
+        "image": "https://example.com/products/nokia_headphones.jpg",
+        "star": "4.0",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f7"
+        }
+    },
+    {
+        "title": "Xiaomi 13.3-inch Laptop",
+        "shortDes": "Lightweight and sleek design for portability.",
+        "price": "750",
+        "discount": true,
+        "discountPrice": "680",
+        "image": "https://example.com/products/xiaomi_laptop13.jpg",
+        "star": "4.4",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf326a"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f8"
+        }
+    },
+    {
+        "title": "Google Pixelbook Go",
+        "shortDes": "Lightweight Chromebook for on-the-go productivity.",
+        "price": "649",
+        "discount": false,
+        "discountPrice": "649",
+        "image": "https://example.com/products/pixelbook_go.jpg",
+        "star": "4.5",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf326a"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f9"
+        }
+    },
+    {
+        "title": "Lenovo Yoga 7i",
+        "shortDes": "Versatile 2-in-1 laptop with powerful performance.",
+        "price": "899",
+        "discount": true,
+        "discountPrice": "800",
+        "image": "https://example.com/products/lenovo_yoga7i.jpg",
+        "star": "4.6",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf326a"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fa"
+        }
+    },
+    {
+        "title": "ASUS ZenFone 10",
+        "shortDes": "Compact smartphone with flagship performance.",
+        "price": "699",
+        "discount": false,
+        "discountPrice": "699",
+        "image": "https://example.com/products/asus_zenfone10.jpg",
+        "star": "4.7",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fb"
+        }
+    },
+    {
+        "title": "Huawei FreeBuds Pro 3",
+        "shortDes": "Ultimate audio experience with intelligent dynamic ANC.",
+        "price": "199",
+        "discount": true,
+        "discountPrice": "170",
+        "image": "https://example.com/products/huawei_freebuds_pro3.jpg",
+        "star": "4.8",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fc"
+        }
+    },
+    {
+        "title": "Infinix Hot 40 Pro",
+        "shortDes": "High-performance gaming phone with fast charging.",
+        "price": "220",
+        "discount": false,
+        "discountPrice": "220",
+        "image": "https://example.com/products/infinix_hot40pro.jpg",
+        "star": "4.3",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fd"
+        }
+    },
+    {
+        "title": "Oppo Find N3 Flip",
+        "shortDes": "Stylish foldable phone with a versatile camera.",
+        "price": "999",
+        "discount": false,
+        "discountPrice": "999",
+        "image": "https://example.com/products/oppo_find_n3_flip.jpg",
+        "star": "4.6",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fe"
+        }
+    },
+    {
+        "title": "Sony WF-1000XM5 Earbuds",
+        "shortDes": "Best-in-class noise cancellation and premium sound quality.",
+        "price": "299",
+        "discount": false,
+        "discountPrice": "299",
+        "image": "https://example.com/products/sony_wf1000xm5.jpg",
+        "star": "4.9",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585ff"
+        }
+    },
+    {
+        "title": "Vivo Y200e 5G",
+        "shortDes": "Stylish smartphone with strong performance and battery life.",
+        "price": "270",
+        "discount": true,
+        "discountPrice": "240",
+        "image": "https://example.com/products/vivo_y200e.jpg",
+        "star": "4.2",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa19215258600"
+        }
+    },
+    {
+        "title": "Apple MacBook Air 15 (M3)",
+        "shortDes": "Incredibly thin and fast laptop for ultimate portability.",
+        "price": "1399",
+        "discount": false,
+        "discountPrice": "1399",
+        "image": "https://example.com/products/macbook_air_15.jpg",
+        "star": "4.9",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf326a"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f2"
+        }
+    },
+    {
+        "title": "Microsoft Surface Go 4",
+        "shortDes": "Lightest and most portable Surface laptop.",
+        "price": "600",
+        "discount": true,
+        "discountPrice": "540",
+        "image": "https://example.com/products/surface_go4.jpg",
+        "star": "4.3",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf326a"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f3"
+        }
+    },
+    {
+        "title": "Samsung Galaxy Book4",
+        "shortDes": "Modern laptop with powerful performance and sleek design.",
+        "price": "899",
+        "discount": false,
+        "discountPrice": "899",
+        "image": "https://example.com/products/galaxy_book4.jpg",
+        "star": "4.7",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf326a"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f4"
+        }
+    },
+    {
+        "title": "Lenovo ThinkPad X1 Carbon Gen 12",
+        "shortDes": "Premium business laptop with exceptional durability.",
+        "price": "1800",
+        "discount": true,
+        "discountPrice": "1650",
+        "image": "https://example.com/products/thinkpad_x1_carbon.jpg",
+        "star": "4.8",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf326a"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fa"
+        }
+    },
+    {
+        "title": "Google Pixel Watch 2",
+        "shortDes": "Advanced health tracking with Google AI integration.",
+        "price": "349",
+        "discount": false,
+        "discountPrice": "349",
+        "image": "https://example.com/products/pixel_watch2.jpg",
+        "star": "4.7",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f9"
+        }
+    },
+    {
+        "title": "ASUS ROG Ally",
+        "shortDes": "Handheld gaming console for PC games on the go.",
+        "price": "699",
+        "discount": true,
+        "discountPrice": "629",
+        "image": "https://example.com/products/asus_rog_ally.jpg",
+        "star": "4.6",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3267"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fb"
+        }
+    },
+    {
+        "title": "Huawei FreeBuds 5i",
+        "shortDes": "Active Noise Cancellation earbuds with Hi-Res Audio.",
+        "price": "99",
+        "discount": false,
+        "discountPrice": "99",
+        "image": "https://example.com/products/huawei_freebuds5i.jpg",
+        "star": "4.4",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fc"
+        }
+    },
+    {
+        "title": "Infinix Zero 30 5G",
+        "shortDes": "Premium smartphone with a curved AMOLED display.",
+        "price": "280",
+        "discount": true,
+        "discountPrice": "250",
+        "image": "https://example.com/products/infinix_zero30_5g.jpg",
+        "star": "4.3",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fd"
+        }
+    },
+    {
+        "title": "Oppo Pad Neo",
+        "shortDes": "Entertainment tablet with a large eye-care display.",
+        "price": "320",
+        "discount": false,
+        "discountPrice": "320",
+        "image": "https://example.com/products/oppo_pad_neo.jpg",
+        "star": "4.2",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fe"
+        }
+    },
+    {
+        "title": "Sony Bravia XR A95L OLED TV",
+        "shortDes": "Top-tier OLED TV with exceptional picture and sound.",
+        "price": "2799",
+        "discount": true,
+        "discountPrice": "2500",
+        "image": "https://example.com/products/sony_bravia_a95l.jpg",
+        "star": "5.0",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585ff"
+        }
+    },
+    {
+        "title": "Vivo Y78+",
+        "shortDes": "Mid-range smartphone with a stylish design and AMOLED display.",
+        "price": "250",
+        "discount": false,
+        "discountPrice": "250",
+        "image": "https://example.com/products/vivo_y78plus.jpg",
+        "star": "4.1",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa19215258600"
+        }
+    },
+    {
+        "title": "Apple AirPods Pro (2nd Gen)",
+        "shortDes": "Unparalleled active noise cancellation and adaptive audio.",
+        "price": "249",
+        "discount": false,
+        "discountPrice": "249",
+        "image": "https://example.com/products/airpods_pro2.jpg",
+        "star": "4.9",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f2"
+        }
+    },
+    {
+        "title": "Microsoft Ergonomic Keyboard",
+        "shortDes": "Designed for comfortable typing and reduced strain.",
+        "price": "70",
+        "discount": true,
+        "discountPrice": "60",
+        "image": "https://example.com/products/microsoft_keyboard.jpg",
+        "star": "4.4",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3264"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f3"
+        }
+    },
+    {
+        "title": "Samsung Galaxy Book 3 Ultra",
+        "shortDes": "High-performance laptop for creative professionals.",
+        "price": "2200",
+        "discount": false,
+        "discountPrice": "2200",
+        "image": "https://example.com/products/galaxy_book3_ultra.jpg",
+        "star": "4.9",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf326a"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f4"
+        }
+    },
+    {
+        "title": "Realme Watch 3 Pro",
+        "shortDes": "Large AMOLED display smartwatch with GPS.",
+        "price": "89",
+        "discount": true,
+        "discountPrice": "75",
+        "image": "https://example.com/products/realme_watch3_pro.jpg",
+        "star": "4.3",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f5"
+        }
+    },
+    {
+        "title": "OnePlus Monitor X 27",
+        "shortDes": "High-refresh-rate gaming monitor for smooth visuals.",
+        "price": "300",
+        "discount": false,
+        "discountPrice": "300",
+        "image": "https://example.com/products/oneplus_monitor_x27.jpg",
+        "star": "4.6",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3267"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f6"
+        }
+    },
+    {
+        "title": "Nokia Wired Headphones 300",
+        "shortDes": "Comfortable on-ear headphones for everyday listening.",
+        "price": "30",
+        "discount": true,
+        "discountPrice": "25",
+        "image": "https://example.com/products/nokia_headphones300.jpg",
+        "star": "3.8",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325b"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f7"
+        }
+    },
+    {
+        "title": "Xiaomi Electric Scooter 4 Ultra",
+        "shortDes": "Powerful and comfortable electric scooter for urban commuting.",
+        "price": "999",
+        "discount": false,
+        "discountPrice": "999",
+        "image": "https://example.com/products/xiaomi_scooter4ultra.jpg",
+        "star": "4.7",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325f"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f8"
+        }
+    },
+    {
+        "title": "Google Nest Doorbell (battery)",
+        "shortDes": "Know who's at your door, from anywhere.",
+        "price": "179",
+        "discount": true,
+        "discountPrice": "150",
+        "image": "https://example.com/products/google_nest_doorbell.jpg",
+        "star": "4.6",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325d"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585f9"
+        }
+    },
+    {
+        "title": "Lenovo Smart Clock Essential with Alexa",
+        "shortDes": "Simple smart clock with Alexa built-in.",
+        "price": "49",
+        "discount": false,
+        "discountPrice": "49",
+        "image": "https://example.com/products/lenovo_smart_clock_alexa.jpg",
+        "star": "4.1",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf325d"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fa"
+        }
+    },
+    {
+        "title": "ASUS ROG Zephyrus G14",
+        "shortDes": "Compact gaming laptop with impressive performance.",
+        "price": "1499",
+        "discount": true,
+        "discountPrice": "1350",
+        "image": "https://example.com/products/asus_rog_g14.jpg",
+        "star": "4.7",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf326a"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fb"
+        }
+    },
+    {
+        "title": "Huawei MateBook D 16",
+        "shortDes": "Large display laptop for productivity and multitasking.",
+        "price": "799",
+        "discount": false,
+        "discountPrice": "799",
+        "image": "https://example.com/products/huawei_matebook_d16.jpg",
+        "star": "4.5",
+        "stock": true,
+        "remark": "new",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf326a"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fc"
+        }
+    },
+    {
+        "title": "Infinix Zero 5G 2023",
+        "shortDes": "Affordable 5G smartphone with powerful processor.",
+        "price": "220",
+        "discount": true,
+        "discountPrice": "190",
+        "image": "https://example.com/products/infinix_zero5g_2023.jpg",
+        "star": "4.2",
+        "stock": true,
+        "remark": "popular",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fd"
+        }
+    },
+    {
+        "title": "Oppo Find N3 Flip",
+        "shortDes": "Stylish foldable phone with a versatile camera.",
+        "price": "999",
+        "discount": false,
+        "discountPrice": "999",
+        "image": "https://example.com/products/oppo_find_n3_flip.jpg",
+        "star": "4.6",
+        "stock": true,
+        "remark": "special",
+        "categoryID": {
+            "$oid": "68767e36bc0c2ec7b8cf3266"
+        },
+        "brandID": {
+            "$oid": "6887fdcfe2faa192152585fe"
+        }
+    }
+]

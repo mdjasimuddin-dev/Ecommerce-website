@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import productStore from "../store/ProductStore";
 import Slider from "../components/slider/Slider";
-import Brands from "../components/brands/Brands"
+import Product from "../components/product/Product";
+import Brands from "../components/brands/Brands";
 
 const HomePage = () => {
   const { sliderRequestApi, brandRequestApi } = productStore();
@@ -20,7 +21,8 @@ const HomePage = () => {
   return (
     <div>
       <Slider />
-      <Brands/>
+      <Product />
+      <Brands />
     </div>
   );
 };
