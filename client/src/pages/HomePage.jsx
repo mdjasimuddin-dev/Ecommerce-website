@@ -1,22 +1,25 @@
 import { useEffect } from "react";
 import productStore from "../store/ProductStore";
-import Slider from "../components/slider/Slider";
 import Product from "../components/product/Product";
 import Brands from "../components/brands/Brands";
 import ProductCategory from "../components/product/ProductCategory";
+import Feature from "../components/feature/Feature";
+import featureStore from "../store/FeatureStore";
 
 const HomePage = () => {
   const {
-    // sliderRequestApi,
+    sliderRequestApi,
     brandRequestApi,
     productByRemarkRequest,
     categoryRequestApi,
   } = productStore();
+  const { featureAPIRequest } = featureStore()
 
   useEffect(() => {
     (async () => {
       try {
-        // await sliderRequestApi();
+        await sliderRequestApi();
+        await featureAPIRequest();
         await categoryRequestApi();
         await productByRemarkRequest("new");
         await brandRequestApi();
@@ -28,8 +31,8 @@ const HomePage = () => {
 
   return (
     <div>
-      {/* <Slider /> */}
-      <ProductCategory/>
+      <Feature />
+      <ProductCategory />
       <Product />
       <Brands />
     </div>

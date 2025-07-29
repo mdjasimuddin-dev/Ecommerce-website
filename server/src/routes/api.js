@@ -58,7 +58,7 @@ router.get('/invoiceProductList/:invoiceID', AuthVerification, invoiceController
 
 
 // feature
-router.get('/featuresList', AuthVerification, featuresController.featuresList)
+router.get('/featuresList', featuresController.featuresList)
 
 // review 
 router.post('/createReview', AuthVerification, productController.createReview)
