@@ -5,6 +5,7 @@ import Brands from "../components/brands/Brands";
 import ProductCategory from "../components/product/ProductCategory";
 import Feature from "../components/feature/Feature";
 import featureStore from "../store/FeatureStore";
+import Slider from "../components/slider/Slider";
 
 const HomePage = () => {
   const {
@@ -31,6 +32,7 @@ const HomePage = () => {
 
   return (
     <div>
+      <Slider/>
       <Feature />
       <ProductCategory />
       <Product />
