@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import productStore from "../../store/ProductStore";
 import CategorySkeleton from "./../../skeleton/CategorySkeleton";
 
@@ -19,7 +20,7 @@ const ProductCategory = () => {
           <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-2 md:gap-5 p-2 md:p-5 ">
             {categoryList.map((item) => {
               return (
-                <div className="bg-white p-2 md:p-5" key={item._id}>
+                <Link to={`/category/${item._id}`} className="bg-white p-2 md:p-5" key={item._id}>
                   <div className="flex flex-col justify-center items-center">
                     <figure>
                       <img
@@ -31,7 +32,7 @@ const ProductCategory = () => {
                   <div className="grid col-span-2">
                     <h1 className="text-lg">{item.categoryName}</h1>
                   </div>
-                </div>
+                </Link>
               );
             })}
           </div>

@@ -20,7 +20,7 @@ const Brands = () => {
         >
           {brandList.map((item, index) => {
             return (
-              <Link key={index}>
+              <Link to={`/brands/${item._id}`} key={index}>
                 <img src={item.brandImg} className="h-9 lg:h-16" alt="" />
                 <h1>{item.BrandName}</h1>
               </Link>
