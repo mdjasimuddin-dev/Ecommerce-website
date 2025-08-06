@@ -20,12 +20,13 @@ const ProductCategory = () => {
           <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-2 md:gap-5 p-2 md:p-5 ">
             {categoryList.map((item) => {
               return (
-                <Link to={`/category/${item._id}`} className="bg-white p-2 md:p-5" key={item._id}>
+                <Link to={`/category/${item._id}`} className="bg-white p-2 md:p-5 shadow-xl rounded-2xl" key={item._id}>
                   <div className="flex flex-col justify-center items-center">
                     <figure>
                       <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                        alt="Shoes"
+                        src={item.categoryImg}
+                        className="h-20"
+                        alt="category 1"
                       />
                     </figure>
                   </div>

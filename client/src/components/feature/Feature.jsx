@@ -26,8 +26,8 @@ const Feature = () => {
                   <div className="text-left space-y-1">
                     <h1 className="text-xl">{item.name}</h1>
                     <p className="text-sm font-normal">
-                      {item.description.length > 30
-                        ? item.description.slice(0, 30)
+                      {item.description.length > 50
+                        ? item.description.slice(0, 50)
                         : item.description}
                     </p>
                   </div>
