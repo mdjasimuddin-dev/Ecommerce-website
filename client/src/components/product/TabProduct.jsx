@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 
 
 const TabProduct = ({ product }) => {
@@ -7,7 +8,7 @@ const TabProduct = ({ product }) => {
     <div className="grid grid-col-1 md:grid-cols-3 lg:grid-cols-4 gap-10 my-10 drop-shadow-2xl">
       {product?.map((item) => {
         return (
-          <div key={item._id} className="card bg-base-100 shadow-sm">
+          <Link to={`/productDetails/${item._id}`} key={item._id} className="card bg-base-100 shadow-2xl p-5">
             <figure>
               <img
                 src={item.image}
@@ -15,7 +16,7 @@ const TabProduct = ({ product }) => {
                 className="h-36 p-1"
               />
             </figure>
-            <div className="card-body text-left">
+            <div className="text-left space-y-2">
               <h2 className="text-2xl">Price : <del className="text-base">${item.price}</del> ${item.discountPrice}</h2>
               <h2 className="card-title">
                 {item.title}
@@ -30,7 +31,7 @@ const TabProduct = ({ product }) => {
                 <div className="badge badge-outline">{item.categories.categoryName}</div>
               </div>
             </div>
-          </div>
+          </Link>
         );
       })}
     </div>
