@@ -34,20 +34,42 @@ const Slider = () => {
               modules={[Autoplay, Pagination, Navigation]}
               className="mySwiper"
             >
-
               {sliderList.map((slideData) => {
                 console.log(slideData.img1);
                 return (
                   <div key={slideData._id}>
-                    <SwiperSlide>
-                      <div>
-                        <img
-                          className="w-full h-[60vh]"
-                          src={`https://cdn.stocksnap.io/img-thumbs/280h/abstract-waves_XYBLVEGDJM.jpg`}
-                          alt=""
-                        />
-                      </div>
-                      <div></div>
+                    <SwiperSlide className="p-10 bg-orange-300">
+                      <section className="  dark:bg-gray-100 dark:text-gray-800">
+                        <div className="w-full flex col-reverse flex-col justify-center mx-auto px-6 lg:flex-row lg:justify-between">
+                          <div className="flex flex-col justify-center text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+                            <h1 className="text-5xl font-bold leading-none sm:text-6xl">
+                              {slideData.title}
+                              erat pharetra
+                            </h1>
+                            <p className="mt-6 mb-8 text-lg sm:mb-12">
+                              {slideData.desc}
+                            </p>
+                            <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+                              <a
+                                rel="noopener noreferrer"
+                                href="#"
+                                className="px-8 py-3 text-lg font-semibold rounded bg-violet-400 dark:bg-violet-600 text-gray-900 dark:text-gray-50"
+                              >
+                                Buy Now
+                              </a>
+                              
+                            </div>
+                          </div>
+
+                          <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+                            <img
+                              src={slideData.img1}
+                              alt=""
+                              className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128"
+                            />
+                          </div>
+                        </div>
+                      </section>
                     </SwiperSlide>
                   </div>
                 );

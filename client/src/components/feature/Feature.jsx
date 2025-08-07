@@ -17,7 +17,7 @@ const Feature = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-2 md:gap-5">
           {featureList.map((item) => {
             return (
-              <div className=" bg-white p-2 items-center lg:p-2">
+              <div className="p-2 items-center lg:p-2">
 
                 <div className="items-center flex gap-2">
                   <figure>

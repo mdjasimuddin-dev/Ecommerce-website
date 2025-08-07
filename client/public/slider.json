@@ -1,0 +1,27 @@
+[
+  {
+    "img1": "https://image.made-in-china.com/202f0j00UkNGbKngyAqj/Wholesale-Original-Phones-11-11PRO-X-Xs-Xr-Xs-Max-Original-Mobile-Phone-Unlocked-Smartphone.webp",
+    "title": "Smartphone X",
+    "desc": "A new generation smartphone with an A15 Bionic chip, 128GB of storage, and a 6.1-inch Super Retina XDR display."
+  },
+  {
+    "img1": "https://example.com/mobile2.jpg",
+    "title": "Foldable Phone Y",
+    "desc": "An innovative foldable smartphone featuring a flexible AMOLED display, triple-camera system, and a powerful Snapdragon 8 Gen 2 processor."
+  },
+  {
+    "img1": "https://example.com/laptop1.jpg",
+    "title": "Gaming Laptop Z",
+    "desc": "A high-performance gaming laptop with an Intel Core i9 processor, NVIDIA GeForce RTX 4070 GPU, and a 165Hz refresh rate screen."
+  },
+  {
+    "img1": "https://example.com/laptop2.jpg",
+    "title": "Ultrabook A",
+    "desc": "A sleek and lightweight ultrabook with a 13-inch 4K OLED display, 16GB RAM, and a 1TB SSD, perfect for on-the-go professionals."
+  },
+  {
+    "img1": "https://example.com/electronic1.jpg",
+    "title": "Smart Speaker B",
+    "desc": "A smart speaker with voice assistant integration, 360-degree sound, and seamless connectivity to other smart home devices."
+  }
+]

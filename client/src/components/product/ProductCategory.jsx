@@ -31,7 +31,7 @@ const ProductCategory = () => {
                     </figure>
                   </div>
                   <div className="grid col-span-2">
-                    <h1 className="text-lg">{item.categoryName}</h1>
+                    <h1 className="text-xl">{item.categoryName}</h1>
                   </div>
                 </Link>
               );
