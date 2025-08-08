@@ -38,7 +38,7 @@ const Slider = () => {
                 console.log(slideData.img1);
                 return (
                   <div key={slideData._id}>
-                    <SwiperSlide className="p-10 bg-orange-300">
+                    <SwiperSlide className="p-10 bg-[#f3e8e8] ">
                       <section className="  dark:bg-gray-100 dark:text-gray-800">
                         <div className="w-full flex col-reverse flex-col justify-center mx-auto px-6 lg:flex-row lg:justify-between">
                           <div className="flex flex-col justify-center text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
@@ -57,7 +57,6 @@ const Slider = () => {
                               >
                                 Buy Now
                               </a>
-                              
                             </div>
                           </div>
 
